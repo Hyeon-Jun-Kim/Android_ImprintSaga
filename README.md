@@ -1,5 +1,5 @@
 # Imprint Saga
-> Android Studio | Java / Firebase 
+> Android Studio | Java / Firebase | Google Login
 
 일학습병행제 Off-JT 프로젝트
 
