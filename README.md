@@ -5,8 +5,6 @@
 
 ![무제 002](https://user-images.githubusercontent.com/59905688/201081217-8bf04718-f681-4672-aaa3-dd3c97eac45d.jpeg)
 
-![GitHub top language](https://img.shields.io/github/languages/top/Hyeon-Jun-Kim/Programmers.svg?color=darkgreen&logo=java) 
-
 ## 프로젝트 소개
 
 영단어 학습을 돕는 퀴즈형 Game Application
