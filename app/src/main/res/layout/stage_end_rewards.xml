@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="255dp"
+    android:background="#F60C67"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WIN Rewards"
+        android:fontFamily="@font/maplestorybold"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textSize="40dp"
+        android:padding="20dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8D9E5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/expTv_onBattle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 300 포인트 획득"
+            android:fontFamily="@font/maplestorylight"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/pointTv_onBattle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/maplestorylight"
+            android:text="40 경험치 획득"
+            android:textSize="20dp"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/medalTv_onBattle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/maplestorylight"
+            android:text="* 메달 획득:"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

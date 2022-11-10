@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#CCDEE8"
+        >
+        <TextView
+            android:id="@+id/rankEmail"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:fontFamily="@font/maplestorylight"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/rankLevel"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="Level"
+            android:fontFamily="@font/maplestorylight"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/rankPoint"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Point"
+            android:fontFamily="@font/maplestorylight"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/rankStage"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="Stage"
+            android:fontFamily="@font/maplestorylight"
+            android:textAlignment="center"
+            android:textSize="10dp"
+            android:padding="10dp"
+           />
+    </LinearLayout>
+</LinearLayout>

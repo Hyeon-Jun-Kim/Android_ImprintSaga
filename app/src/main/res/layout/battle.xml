@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/backgraound">
+
+        <TextView
+            android:id="@+id/questionTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="단어 뜻"
+            android:textColor="#363636"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.114" />
+
+        <ImageView
+            android:id="@+id/userIV"
+            android:layout_width="92dp"
+            android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/player_0_0_0" />
+
+        <ProgressBar
+            android:id="@+id/userPB"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/colorPrimary"
+            android:max="100"
+            android:progress="100"
+            android:scaleY="2"
+            app:layout_constraintBottom_toTopOf="@+id/userIV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.143"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/enemyIV"
+            android:layout_width="115dp"
+            android:layout_height="168dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.945"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/enemy" />
+
+        <ProgressBar
+            android:id="@+id/enemyPB"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/colorPrimary"
+            android:max="100"
+            android:progress="100"
+            android:scaleY="2"
+            app:layout_constraintBottom_toTopOf="@+id/enemyIV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.867"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/enemyPB_TV"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="100"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.852"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.191" />
+
+        <TextView
+            android:id="@+id/enemyTalkTV"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.408" />
+
+        <TextView
+            android:id="@+id/userPB_TV"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="100"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.150"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.373" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:background="#004481"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/timerTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="10"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+        <ProgressBar
+            android:id="@+id/timerPB"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="350dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:max="10"
+            android:progress="0"
+            android:progressDrawable="@drawable/myprogressbar" />
+
+        <TextView
+            android:id="@+id/answerTV"
+            android:layout_width="342dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="answer"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/hintTV"
+            android:layout_width="353dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-10dp"
+            android:gravity="center"
+            android:text="Hint"
+            android:textColor="#00A3E1"
+            android:textSize="55dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wordBtns"
+        android:layout_width="420dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:background="#004481"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/skillBtns"
+        android:layout_width="420dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:background="#004481"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/skillBTN"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:text="SKILL"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
